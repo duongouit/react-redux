@@ -20,7 +20,7 @@ function HobbyList(props) {
         <div>
             {hobbyList.map((item, index) =>
                 (<p key={index}
-                    className={item.active === true ? 'active' : ''}
+                    className={item.active ? 'active' : ''}
                     onClick={() => handleClick(item)}>
                     {item.id}-{item.name}
                 </p>))}

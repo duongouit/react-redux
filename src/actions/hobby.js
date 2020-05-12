@@ -1,12 +1,13 @@
+import {hobbyType} from './type';
 export const addNewHobby = (hobby) => {
     return {
-        type : 'ADD_HOBBY',
+        type : hobbyType.ADD_HOBBY,
         payload: hobby,
     }
 }
 export const setActiveHobby = (hobby) => {
     return {
-        type : 'SET_ACTIVE_HOBBY',
+        type : hobbyType.SET_ACTIVE_HOBBY,
         payload: hobby,
     }
 }

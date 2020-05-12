@@ -4,6 +4,9 @@ import HobbyList from '../components/Home/HobbyList';
 import { addNewHobby, setActiveHobby } from '../actions/hobby';
 
 function HomePage() {
+    if(1 === 2){
+        
+    }
     const [value, setValue] = useState('');
     const hobbyList = useSelector(state => state.hooby);
     const dispatch = useDispatch();
